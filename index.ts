@@ -1,14 +1,20 @@
-const API_URL: string = "https://icanhazdadjoke.com/";
+const API_URL: string = "https://icanhazdadjoke.com/api"
+/* document.getElementById("nextJoke")!.addEventListener("click", nextJoke) //el botón en el html lleva una id que sería nextJoke */
 
-console.log(
-fetch(API_URL)
-        .then(response => response.json())
-        .then(data => console.log(data))
 
-)
 
 function nextJoke() {
 
-const theJoke: HTMLElement | any = document.getElementById('theJoke')
+  fetch('https://icanhazdadjoke.com/', {
+    headers: {
+      'Accept': 'application/json'
+    }
+  })
+    .then(response => response.json())
+    .then(json => document.getElementById("theJoke")!.innerHTML = json.joke)
+    .catch(error => console.log(error))
+
+
+  /* const theJoke: HTMLElement | any = document.getElementById('theJoke') */
 
 }
