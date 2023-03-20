@@ -1,7 +1,17 @@
 body {
     opacity: 0.9;
-    /* overflow-x: hidden; */
-    /* background-image: url("/peñarisas.jpg"); */
     background: rgba(0, 0, 0, 0.5) url("/peñarisas.jpg") no-repeat center center fixed;
     background-size: cover;
 }
+
+#weatherIcon {
+    width: 4%;
+    display: inline-block;
+}
+#weatherInfo {
+    display: inline-block;
+}
+
+/* #scoreButtons {
+    display: none;
+} */

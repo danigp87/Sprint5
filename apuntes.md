@@ -3,6 +3,7 @@ Typescript
 - tsc -v para ver la vesrión intalada
 - tsc index.ts para "convertirlo" en JS
 - tsc *.ts para hacerlo con todos los .ts
+- rsc --w para dejar en watching y que haga los cambios en el JS cada vez que se guarda
 
 
 Tipos en TypeScript que no están en JavaScript:
